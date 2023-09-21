@@ -14,12 +14,6 @@ use App\Http\Controllers\HomeController;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('front.index');
 });
 
-Route::get("/home", function (){
-    return view("index");
-});
-
-Route::get("/anasayfa", [HomeController::class, "index"]);
-//Route::get("/anasayfa", "HomeController@index"); laravel 8'e kadar ki kullanım.
